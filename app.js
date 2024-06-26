@@ -6,10 +6,10 @@ const checkingWorkingHours = (req, res, next) => {
     const day = now.getDay();
     const hour = now.getHours();
 
-    if (day >= 1 && day <= 5 && hour >= 9 && hour < 17) {
+    if (day >= 1 && day <= 5 && hour >= 9 && hour < 19) {
         next();
     } else {
-        res.send('This application is only available during working hours (Mon-Fri, 9-17).');
+        res.send('This application is only available during working hours (Mon-Fri, 9-19).');
     }
 };
 app.use(checkingWorkingHours);
