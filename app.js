@@ -2,9 +2,9 @@ const express = require("express");
 const app = express();
 // write your middleware here
 const checkingWorkingHours = (req, res, next) => {
-    const now = new Date();
-    const day = now.getDay();
-    const hour = now.getHours();
+    const thisTime = new Date();
+    const day = thisTime.getDay();
+    const hour = thisTime.getHours();
 
     if (day >= 1 && day <= 5 && hour >= 9 && hour < 19) {
         next();
