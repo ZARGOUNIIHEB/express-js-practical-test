@@ -17,4 +17,4 @@ The web application is accessible during the following working hours:
 
 - Monday to Friday
 
-- 9:00 AM to 5:00 PM
+- 9:00 AM to 5:13 PM
